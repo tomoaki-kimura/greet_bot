@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>あいさつロボット</title>
+  </head>
+  <body>
+    <h3>あいさつロボット</h3>
+    <p>ワタシハアイサツロボットデス。</p>
+    <p>アイサツヲニュウリョクシテクダサイ。</p>
+
+    <img src="/robot.png" alt="ロボット画像">
+    <%= @greet %>
+
+    <p>ロボットは。3つのあいさつ「おはよう」「こんにちは」「こんばんは」の３つの挨拶が理解できます。</p>
+    <form action="/" method="POST">
+      <label>あいさつ: <input type="text" name="keyword" placeholder="ここにあいさつを入れてね"></label>
+      <input type="submit" value="送信">
+    </form>
+  </body>
+</html>
